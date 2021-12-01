@@ -8,7 +8,7 @@
         'license': 'AGPL-3',
         'support': 'yvandotet@yahoo.fr',
         'website': 'https://github.com/YvanDotet/',
-        'installable': True,
+        'installable': False,
 
         'data': [
             'security/security.xml',
