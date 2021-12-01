@@ -37,7 +37,7 @@
 					</group>
 					<button name="execute" type="object" string="Execute" class="oe_highlight"/>
 
-					<div style="overflow:visible !important;">
+					<div style="overflow:visible !important;">					
 						<group>
 							<group colspan="4">
 								<field name="rowcount" readonly="1" nolabel="1"/>
