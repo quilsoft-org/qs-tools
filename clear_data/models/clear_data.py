@@ -23,11 +23,11 @@ from odoo.exceptions import MissingError, UserError, ValidationError
 
 class ClearDataModel(models.Model):
     _name='clear.data.model'
-    
+    _description='Clear Data'
     name=fields.Char(string="Model group")
     internal_model_list=fields.Char(string='Always clear',descripton="Model in this list do not need installed. style like this:[string,string,...]")
     model_clear_ids=fields.Many2many("ir.model",'clear_data_ir_model_rel','group_id','model_id',domain=[('model','not in',['clear.data.model'])],ondelete="cascade")
-    auto_clear_ir_sequence=fields.Boolean(string="Auto clear ir sequence",defualt=True)
+    auto_clear_ir_sequence=fields.Boolean(string="Auto clear ir sequence",default=True)
     
     
     
